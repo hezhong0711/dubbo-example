@@ -1,7 +1,7 @@
-package net.aimeizi.dubbo.service.impl;
+package net.aimeizi.dubbo.provider.service.impl;
 
-import net.aimeizi.dubbo.entity.User;
-import net.aimeizi.dubbo.service.UserService;
+import net.aimeizi.dubbo.service.entity.User;
+import net.aimeizi.dubbo.service.service.UserService;
 
 import com.alibaba.dubbo.config.annotation.Service;
 

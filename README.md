@@ -29,8 +29,8 @@ dubbo-consumer (dubbo consumer) dubbo服务消费者
 * 示例代码如下
 
 ```java
-import net.aimeizi.dubbo.entity.User;
-import net.aimeizi.dubbo.service.UserService;
+import User;
+import UserService;
 
 import com.alibaba.dubbo.config.annotation.Service;
 
@@ -119,8 +119,8 @@ public class UserServiceImpl implements UserService {
 
 ```java
 import com.alibaba.dubbo.config.annotation.Reference;
-import net.aimeizi.dubbo.service.DemoService;
-import net.aimeizi.dubbo.service.UserService;
+import DemoService;
+import UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -140,8 +140,8 @@ import javax.annotation.Resource;
  * 若要使用@Autowired或@Resource注解需要显式声明bean
  *
  * 使用@Autowired或@Resource注解时需要使用dubbo:reference来声明
- * <dubbo:reference interface="net.aimeizi.dubbo.service.UserService" id="userService"/>
- * <dubbo:reference interface="net.aimeizi.dubbo.service.DemoService" id="demoService"/>
+ * <dubbo:reference interface="UserService" id="userService"/>
+ * <dubbo:reference interface="DemoService" id="demoService"/>
  *
  * 以上的配置均需要在spring mvc的DispatcherServlet配置中显式配置dubbo consumer的配置.如/WEB-INF/applicationContext-dubbo-consumer.xml 否则在Controller中服务报NullPointException
  * <servlet>
@@ -190,8 +190,8 @@ public class HelloController {
 
 ```xml
 <!-- 使用@Resource注解时需要使用dubbo:reference来声明 -->
-<dubbo:reference interface="net.aimeizi.dubbo.service.UserService" id="userService"/>
-<dubbo:reference interface="net.aimeizi.dubbo.service.DemoService" id="demoService"/>
+<dubbo:reference interface="UserService" id="userService"/>
+<dubbo:reference interface="DemoService" id="demoService"/>
 ```
 
 ③ 以上的配置均需要在spring mvc的DispatcherServlet配置中显式配置dubbo consumer的配置.如/WEB-INF/applicationContext-dubbo-consumer.xml 否则在Controller中服务报NullPointException

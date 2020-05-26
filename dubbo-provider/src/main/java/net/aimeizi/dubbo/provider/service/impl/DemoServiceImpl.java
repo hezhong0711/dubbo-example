@@ -1,6 +1,6 @@
-package net.aimeizi.dubbo.service.impl;
+package net.aimeizi.dubbo.provider.service.impl;
 
-import net.aimeizi.dubbo.service.DemoService;
+import net.aimeizi.dubbo.service.service.DemoService;
 
 import com.alibaba.dubbo.config.annotation.Service;
 

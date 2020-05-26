@@ -1,4 +1,4 @@
-package net.aimeizi.dubbo.service;
+package net.aimeizi.dubbo.service.service;
 
 public interface DemoService {
 

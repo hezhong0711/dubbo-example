@@ -1,6 +1,6 @@
-package net.aimeizi.dubbo.service;
+package net.aimeizi.dubbo.service.service;
 
-import net.aimeizi.dubbo.entity.User;
+import net.aimeizi.dubbo.service.entity.User;
 
 public interface UserService {
 

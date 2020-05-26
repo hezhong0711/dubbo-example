@@ -1,4 +1,4 @@
-package net.aimeizi.dubbo.service.impl;
+package net.aimeizi.dubbo.provider.service.impl;
 
 public class UserIdGenerator {
 

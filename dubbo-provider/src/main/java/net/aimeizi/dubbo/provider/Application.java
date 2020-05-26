@@ -1,4 +1,4 @@
-package net.aimeizi.dubbo;
+package net.aimeizi.dubbo.provider;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

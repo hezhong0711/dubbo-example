@@ -1,9 +1,9 @@
-package net.aimeizi.dubbo.controller;
+package net.aimeizi.dubbo.consumer;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import net.aimeizi.dubbo.entity.User;
-import net.aimeizi.dubbo.service.DemoService;
-import net.aimeizi.dubbo.service.UserService;
+import net.aimeizi.dubbo.service.entity.User;
+import net.aimeizi.dubbo.service.service.DemoService;
+import net.aimeizi.dubbo.service.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -70,7 +70,7 @@ public class HelloController {
 	public String userAddView (){
 		return "userAdd";
 	}
-	
+
 	@RequestMapping(value = "/userAdd", method = RequestMethod.POST)
 	public String userAdd(Model model, String userName,String userEnName, String country, String company) {
 		User user = new User();

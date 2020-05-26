@@ -1,4 +1,4 @@
-package net.aimeizi.dubbo.entity;
+package net.aimeizi.dubbo.service.entity;
 
 import java.io.Serializable;
 
