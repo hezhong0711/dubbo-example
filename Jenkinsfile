@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('build') {
          steps {
-               sh label: '', script: '''./mvnw clean build'''
+               sh label: '', script: '''./mvnw clean compile'''
          }
       }
       stage('analysis') {
