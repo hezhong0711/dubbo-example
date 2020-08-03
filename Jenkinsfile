@@ -22,7 +22,7 @@ pipeline {
 
    post {
        always{
-            dependencyReport 'report.json'
+            dependencyReport allowEmptyResults: true, reportPath: 'report.json'
        }
    }
 }
