@@ -24,7 +24,7 @@ pipeline {
 
    post {
        always{
-            dependencyReport allowEmptyResults: true, reportPath: 'report.json', allowQualityGateFail: true
+            dependencyReport allowEmptyResults: true, reportPath: 'report.json', allowQualityGateFail: false
        }
    }
 }
