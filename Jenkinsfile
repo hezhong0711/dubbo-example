@@ -15,7 +15,9 @@ pipeline {
 
                                      curl --location --request POST 'https://ec2-68-79-38-105.cn-northwest-1.compute.amazonaws.com.cn:10443/api/module/logic-modules/auto-define' --insecure --header 'Authorization: Basic YWRtaW46MTIzNCFAIyQ='
 
-                                     curl --location --request GET 'https://ec2-68-79-38-105.cn-northwest-1.compute.amazonaws.com.cn:10443/api/module/logic-modules/metrics' --insecure --header 'Authorization: Basic YWRtaW46MTIzNCFAIyQ=' > report.json'''
+                                     curl --location --request GET 'https://ec2-68-79-38-105.cn-northwest-1.compute.amazonaws.com.cn:10443/api/module/logic-modules/metrics' --insecure --header 'Authorization: Basic YWRtaW46MTIzNCFAIyQ=' > report.json
+                                     
+                                     curl --location --request GET 'http://localhost:18080/quality-gate-profile/rule4551' --insecure --header 'Authorization: Basic YWRtaW46MTIzNCFAIyQ=' > quality-gate-profile.json'''
          }
       }
    }
